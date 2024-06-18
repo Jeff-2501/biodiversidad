@@ -1,0 +1,9 @@
+:root {
+    --fuenteHeading: 'PT Sans', sansns-serif;
+    --fuenteParafos: 'Open Sans', sans-serif;
+
+    --primario: #784D3C;
+    --claro: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}

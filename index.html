@@ -1,69 +1,116 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biodiversidad Cundinamarca y Boyacá</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS para estilos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodiversidad En Boyaca Y Cundinamarca</title>
+    <meta name="description" content="Página web sobre la biodiversidad en Cundinamarca y Boyaca">
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
-  <section id="inicio">
-    <div class="hero">
-      <h1>Biodiversidad en Cundinamarca y Boyacá</h1>
-      <p>Descubre la riqueza natural de estas regiones</p>
-    </div>
-  </section>
+    <header class="header">
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-        <li><a href="#Boyaca">Cundinamarca</a></li>
-        <li><a href="#Cundinamarca">Boyaca</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Biodiversidad En <span class="logo__bold">Boyaca Y Cundinamarca</span></h1>
+                </a>
 
-  <section id="sobre-nosotros">
-    <div class="container">
-      <h2>Sobre Nosotros</h2>
-      <p>Información sobre la organización responsable de la página y su misión.</p>
-    </div>
-  </section>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
 
-  <section id="fauna">
-    <div class="container">
-      <h2>Fauna</h2>
-      <p>Explora la diversidad de animales que habitan en Cundinamarca y Boyacá.</p>
-      <!-- Aquí podrías agregar imágenes de animales -->
-    </div>
-  </section>
+        <div class="header__texto">
+            <h2 class="no-margin">Explora la Biodiversidad de Cundinamarca y Boyacá</h2>
+            <p class="no-margin">Descubre la riqueza natural de nuestras tierras</p>
+        </div>
+    </header>
 
-  <section id="flora">
-    <div class="container">
-      <h2>Flora</h2>
-      <p>Descubre la variedad de plantas y árboles que crecen en estas regiones.</p>
-      <!-- Aquí podrías agregar imágenes de plantas y árboles -->
-    </div>
-  </section>
+    <div class="contenedor contenido-principal">
+        <main class="blog">
 
-  <section id="contacto">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>¿Tienes alguna pregunta o comentario? ¡Contáctanos!</p>
-      <p>Correo electrónico: info@biodiversidadcundiboy.com</p>
-      <p>Teléfono: +57 123 456 789</p>
-      <!-- Aquí podrías agregar un formulario de contacto -->
-    </div>
-  </section>
+            <h3>Nuestro Blog</h3>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Biodiversidad en Cundinamarca y Boyacá</p>
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <!-- <source loading="lazy"  srcset="blogdecafe_inicio/img/blog1.webp" type="image/webp">  --> 
+                        <img loading="lazy" src="img/boyaca/pexels-dogo-zambrano-13663795.jpg" alt="imagen blog"> 
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Tipos de Grano de Café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+
+        </main>
+        <aside class="sidebar">
+            <h3>Nuestros Cursos y Talleres</h3>
+
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin">Técnicas de Extracción de Café</h4>
+                    <p class="widget-curso__label">Precio: 
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo: 
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">Más Información sobre nuestros cursos</a>
+                </li>
+
+                <li class="widget-curso">
+                    <h4 class="no-margin">4 Recetas de Café para Principiantes</h4>
+                    <p class="widget-curso__label">Precio: 
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo: 
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">Más Información sobre nuestros cursos</a>
+                </li>
+            </ul>
+        </aside>
     </div>
-  </footer>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Biodiversidad En<span class="logo__bold">Boyaca Y Cundinamarca</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/modernizr.js"></script>
+    
 </body>
 </html>
